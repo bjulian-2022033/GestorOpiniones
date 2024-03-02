@@ -1,0 +1,483 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorOp",
+    "dateExported": "2024-03-03T10:53:01.808Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "d8685a7c-c1b4-43a5-bf80-70d55ba8ad0f",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-02T08:28:15.715Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "8fb5870c-b2b1-41db-98dc-8de1a73532a2",
+            "name": "Category",
+            "containerId": "",
+            "created": "2024-03-02T08:28:15.718Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "71ff94ef-1f51-46f8-b24e-7403ce00a69a",
+            "name": "publication",
+            "containerId": "",
+            "created": "2024-03-02T08:28:15.716Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "f12e798b-0812-4403-a8f9-632d0016da99",
+            "name": "comment",
+            "containerId": "",
+            "created": "2024-03-02T08:28:15.717Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "94638a6c-3de8-4e13-b4e3-25b47f77a9af",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "d8685a7c-c1b4-43a5-bf80-70d55ba8ad0f",
+            "name": "Register",
+            "url": "/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-02T08:28:15.716Z",
+            "modified": "2024-03-03T10:33:57.309Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Bryan"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Julian"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "50630393"
+                    },
+                    {
+                        "name": "email",
+                        "value": "bryanj@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "bryan"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "gender",
+                        "value": "M"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b7fcc912-332a-488a-ad75-91ae1ac6547a",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "d8685a7c-c1b4-43a5-bf80-70d55ba8ad0f",
+            "name": "Login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-02T08:28:15.717Z",
+            "modified": "2024-03-03T10:30:54.817Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "bryan",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "email",
+                        "value": "bryanj@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "50630393",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "17813bb3-47c1-4d2b-a5a2-125fec9dad59",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "d8685a7c-c1b4-43a5-bf80-70d55ba8ad0f",
+            "name": "UpdateUser",
+            "url": "/update/65e451c350af694ef2297198",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-02T08:28:15.718Z",
+            "modified": "2024-03-03T10:34:24.296Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "12"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "12"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12341234"
+                    },
+                    {
+                        "name": "email",
+                        "value": "12@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "12"
+                    },
+                    {
+                        "name": "oldPassword",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "87654321"
+                    },
+                    {
+                        "name": "gender",
+                        "value": "M"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "fb706fbb-619d-4bdf-8441-c2c2571de9dd",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "71ff94ef-1f51-46f8-b24e-7403ce00a69a",
+            "name": "savePublication",
+            "url": "/publication/savePublication",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-02T08:28:15.721Z",
+            "modified": "2024-03-03T10:49:00.377Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Messi apunto de retirarse"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e4526e93864a26ad262ca1"
+                    },
+                    {
+                        "name": "principalText",
+                        "value": "Messi esta apunto de retirarse por que la edad ya le afecta"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c68b3afc-a470-44a9-892b-e88959440c18",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "71ff94ef-1f51-46f8-b24e-7403ce00a69a",
+            "name": "updatePublication",
+            "url": "/publication/publicationUpdate/65e4536393864a26ad262cb1",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-02T08:28:15.722Z",
+            "modified": "2024-03-03T10:47:41.580Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Guatemala al mundial"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e4526e93864a26ad262ca1"
+                    },
+                    {
+                        "name": "principalText",
+                        "value": "Guatemala le gana a Panama y con eso va para el mundial"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "de08ae29-a322-402d-8632-fa404afb9e1c",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "71ff94ef-1f51-46f8-b24e-7403ce00a69a",
+            "name": "deletePublication",
+            "url": "/publication/deletePub/65e4536393864a26ad262cb1",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-02T08:28:15.723Z",
+            "modified": "2024-03-03T10:47:52.299Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "89f77591-2365-4c38-a3ef-0e9f0f8db7d9",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "71ff94ef-1f51-46f8-b24e-7403ce00a69a",
+            "name": "ListPublication",
+            "url": "/publication/getP",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-02T08:28:15.724Z",
+            "modified": "2024-03-03T10:48:00.502Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c857e644-553c-4cb0-85e1-abb3d898cdab",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "f12e798b-0812-4403-a8f9-632d0016da99",
+            "name": "saveComment",
+            "url": "/comment/saveComment",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-03-02T08:28:15.725Z",
+            "modified": "2024-03-03T10:48:15.392Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "publication",
+                        "value": "65e4535193864a26ad262cad"
+                    },
+                    {
+                        "name": "comment",
+                        "value": "Creo que messi esta en forma todavia"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "da4982cd-11ec-459c-b5d4-62eaaaba29d0",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "8fb5870c-b2b1-41db-98dc-8de1a73532a2",
+            "name": "saveCategory",
+            "url": "/category/saveCategory",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-03-02T08:28:15.726Z",
+            "modified": "2024-03-03T09:04:41.855Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCa",
+                        "value": "Deporte"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Seccion para el fin informativo del deporte"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c152c0bc-704b-45ea-a04e-06730269236e",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "8fb5870c-b2b1-41db-98dc-8de1a73532a2",
+            "name": "updateCategory",
+            "url": "/category/categoryUpdate/65e4529e93864a26ad262ca3",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2024-03-02T08:28:15.727Z",
+            "modified": "2024-03-03T10:47:14.043Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCa",
+                        "value": "actualizar"
+                    },
+                    {
+                        "name": "description",
+                        "value": "actualizar"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6c116cbf-d4d0-465b-afc1-5e58704e844e",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "8fb5870c-b2b1-41db-98dc-8de1a73532a2",
+            "name": "deleteCategory",
+            "url": "/category/deleteCA/",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2024-03-02T08:28:15.728Z",
+            "modified": "2024-03-03T10:49:14.800Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d0a6a61d-727f-40eb-8f4b-ef919f9953fc",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "8fb5870c-b2b1-41db-98dc-8de1a73532a2",
+            "name": "ListCategory",
+            "url": "/category/get",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-03-02T08:28:15.729Z",
+            "modified": "2024-03-03T10:47:30.222Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1deee781-82ab-4809-9e6a-1e4fa8c134d6",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "f12e798b-0812-4403-a8f9-632d0016da99",
+            "name": "updateComment",
+            "url": "/comment/commentUpdate/65e4545293864a26ad262cc6",
+            "method": "PUT",
+            "sortNum": 160000,
+            "created": "2024-03-03T08:55:56.284Z",
+            "modified": "2024-03-03T10:48:24.741Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "publication",
+                        "value": "65e4535193864a26ad262cad"
+                    },
+                    {
+                        "name": "comment",
+                        "value": "Ojala y no se retire messi"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "82b28d3b-f889-43b3-977a-985f71592f92",
+            "colId": "11adab7a-4d1f-4b6b-9069-c6841ec0e95c",
+            "containerId": "f12e798b-0812-4403-a8f9-632d0016da99",
+            "name": "deleteComment",
+            "url": "/comment/deleteC/65e4545293864a26ad262cc6",
+            "method": "DELETE",
+            "sortNum": 170000,
+            "created": "2024-03-03T08:56:04.701Z",
+            "modified": "2024-03-03T10:48:34.186Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "token",
+                "value": ""
+            }
+        ],
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
